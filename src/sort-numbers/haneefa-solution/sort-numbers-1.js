@@ -10,7 +10,7 @@
  * @example
  *
  * sortNumbers([1.5, 1, -1.5, 0, -1]);
- * //  -> [-1.5, -1, 0, 1, 1.5]
+ * // -> [-1.5, -1, 0, 1, 1.5]
  */
 
 export const sortNumbers = (arrOfNumbers = []) => {
