@@ -1,4 +1,4 @@
-export const intersection = (array = [], values = []) => {
-  const intersectionResult = array.filter((x) => values.includes(x));
-  return intersectionResult;
+export const intersection = (array1 = [], array2 = []) => {
+  const intersectionResult = new Set(array2);
+  return [...new Set(array1)].filter(value => intersectionResult.has(value));
 };
