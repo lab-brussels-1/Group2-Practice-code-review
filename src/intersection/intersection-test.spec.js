@@ -11,7 +11,9 @@ describe('Intersection of 2 arrays', () => {
     expect(intersection()).toEqual([]);
   });
   it('[naza, daniel], [daniel]--> [daniel]', () => {
-    expect(intersection(['naza', 'daniel', 'naza'], ['daniel'])).toEqual(['daniel']);
+    expect(intersection(['naza', 'daniel', 'naza'], ['daniel'])).toEqual([
+      'daniel',
+    ]);
   });
   it('[a,b,c], [a,b,c,d,e,a]--> [null]', () => {
     expect(
