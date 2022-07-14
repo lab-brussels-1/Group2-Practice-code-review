@@ -1,7 +1,7 @@
 import { intersection } from './intersection.js';
 
 describe('Intersection of 2 arrays', () => {
-  it('[2, 1, 2, 1npm run test], [2, 3]--> [2]', () => {
+  it('[2, 1, 2, 1], [2, 3]--> [2]', () => {
     expect(intersection([2, 1, 2, 1], [2, 3])).toEqual([2]);
   });
   it('[2, 3, 4, 5, 6], [3, 4, 6, 2]--> [2, 3, 4, 6]', () => {
