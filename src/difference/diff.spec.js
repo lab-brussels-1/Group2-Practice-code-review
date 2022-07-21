@@ -1,7 +1,9 @@
 // functions
 
+let arr1 = [];
+
 const removeDuplicates = (arr1) => {
-  let setArr1 = new Set(arr1);
+  const setArr1 = new Set(arr1);
   arr1 = Array.from(setArr1);
   return arr1;
 };
@@ -9,19 +11,19 @@ const removeDuplicates = (arr1) => {
 const findDifference = (arr1) => {
   arr1[0] = removeDuplicates(arr1[0]);
   arr1[1] = removeDuplicates(arr1[1]);
-  let firstArr = arr1[0];
+  const firstArr = arr1[0];
   for (let i = 0; i < arr1[1].length; i++) {
     if (firstArr.includes(arr1[1][i])) {
       // find the indexOf the common element found
-      let index = firstArr.indexOf(arr1[1][i]);
-      //remove the element found
+      const index = firstArr.indexOf(arr1[1][i]);
+      // remove the element found
       firstArr.splice(index, 1);
     }
   }
   return firstArr;
 };
 
-//test
+// test
 
 describe('Difference between two arrays', () => {
   it('it should return [1] when [[1,2],[2,8]] are passed', () => {
@@ -50,7 +52,7 @@ describe('Difference between two arrays', () => {
   });
 });
 
-//Edge case- same two sets and disjoint arrays, empty arrays
+// Edge case- same two sets and disjoint arrays, empty arrays
 describe('Edge cases for difference between two arrays', () => {
   it('it should return [] when [[1,2,3],[1,2,3]] are passed', () => {
     expect(
