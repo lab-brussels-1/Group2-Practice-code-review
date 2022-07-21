@@ -6,6 +6,11 @@
 // changing the array to set to remove duplicate elements and convert it back to array.
 // set only allows unique elements.
 
+const arraytest = [
+  [1, 2, 1],
+  [2, 3, 4],
+];
+
 const removeDuplicates = (arr1) => {
   let array2D = arr1;
   const setArr1 = new Set(array2D);
@@ -27,3 +32,5 @@ const findDifference = (arr1) => {
   }
   return array2D[0];
 };
+
+findDifference(arraytest);
