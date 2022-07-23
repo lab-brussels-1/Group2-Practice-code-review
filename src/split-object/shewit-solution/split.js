@@ -1,6 +1,6 @@
 // function
 
-const testObject = { a: 1, b: 2, c: 3 };
+const tstObject = { a: 1, b: 2, c: 3 };
 
 const splitObject = (testObject) => {
   const arr = [];
@@ -11,4 +11,4 @@ const splitObject = (testObject) => {
   return arr;
 };
 
-splitObject(testObject);
+splitObject(tstObject);
