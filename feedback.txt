@@ -1,0 +1,8 @@
+You used PR's to contribute code to the main repository, good!
+You seem to have split the exercises over the team members, good!
+Every PR had at least one reviewer, good!
+All CI checks completed and passed, good! 
+You used projects to track progress. Also good job (not every task is closed even if the PR is completed though)
+The only remark would be that you skipped reviewing the checklist. You should not complete a PR until every check has passed
+
+Overal very good job!
